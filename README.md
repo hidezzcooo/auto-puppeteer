@@ -1,2 +1,2 @@
 # puppeteer
-##全局安装puppeteer
+## 全局安装puppeteer
