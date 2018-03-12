@@ -3,7 +3,7 @@
 ## 安装puppeteer
 首先需要安装puppeteer，命令行下运行
 ```
-cd auto-puppeteer    //enter puppeteer project
+cd auto-puppeteer    // enter puppeteer project
 cnpm i           // install puppeteer
 ```
 > 注意：如果在祖国母亲的怀抱下运行此程序，请务必使用*cnpm*执行命令
