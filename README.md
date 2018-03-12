@@ -1,2 +1,2 @@
 # puppeteer
-about puppeteer
+##全局安装puppeteer
