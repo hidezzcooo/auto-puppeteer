@@ -13,8 +13,7 @@ npm i  or  cnpm i    # install puppeteer
 
 也可以手动下载 Chromium 并修改 `index.js` 指定 Chromium 的安装路径，例如：
 ```javascript
-puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'})
-// on MacOS
+puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'})  // on MacOS
 ```
 ## 运行
 安装配置完成，运行（URL为将要进行检测的目标地址）：
