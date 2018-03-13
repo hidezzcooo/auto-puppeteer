@@ -1,5 +1,3 @@
-# auto-puppeteer
-
 ## 安装
 首先需要安装 puppeteer，命令行下运行：
 ```bash
