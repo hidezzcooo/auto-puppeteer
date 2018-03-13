@@ -18,7 +18,7 @@ puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chr
 ```bash
 npm start <URL> # URL is target website address
 ```
-> 建议手动安装 [Chromium/66 以下版本](http://chromium.woolyss.com/#external-extension-installation)，由于默认 puppeteer 默认安装浏览器版本为66+，会导致某些https请求验证不通过，并当做请求失败处理。
+> 建议手动安装 [Chromium/66 以下版本](http://chromium.woolyss.com/#external-extension-installation)(需要科学上网)，由于默认 puppeteer 默认安装浏览器版本为66+，会导致某些https请求验证不通过，并当做请求失败处理。
 ## 相关
 - [puppeteer github](https://github.com/GoogleChrome/puppeteer/tree/v1.1.1)
 - [puppeteer api](https://github.com/GoogleChrome/puppeteer/blob/v1.1.1/docs/api.md)
