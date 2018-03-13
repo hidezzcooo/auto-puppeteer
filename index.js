@@ -1,5 +1,3 @@
-/*Create by Roku*/
-
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 const target = process.argv.splice(2)[0]
@@ -13,6 +11,7 @@ try {
     // const browser = await puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'})
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
+    const version = await browser.version()
     let response_info = ''
     let failed_info = ''
     
@@ -33,7 +32,8 @@ try {
     	fs.writeFile(txtArr[1], failed_info, err => err)
     })
 
-    console.log(`... Checking <${target}> ...`)
+    console.log(`... Checking : <${target}> ...`)
+    console.log(`... Browser version : ${version}`)
     await page.goto(target)
     await page.waitFor(5000)
     browser.close()
