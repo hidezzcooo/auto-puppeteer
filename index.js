@@ -10,8 +10,8 @@ deleteTxt(txtArr)
 
 try {
   (async () => {
-    const browser = await puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'})
-    // const browser = await puppeteer.launch()
+    // const browser = await puppeteer.launch({executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'})
+    const browser = await puppeteer.launch()
     const page = await browser.newPage()
     let response_info = ''
     let failed_info = ''
