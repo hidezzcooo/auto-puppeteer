@@ -6,7 +6,7 @@
 cd auto-puppeteer    # enter puppeteer dir
 npm i  or  cnpm i    # install puppeteer
 ```
-> 注意：如果在祖国母亲的怀抱下运行 puppeteer，请务必使用 `cnpm` 执行命令，并且确保 `node` 版本 >=v7.6.0
+> 注意：如果在祖国母亲的怀抱下安装 puppeteer，请务必使用 `cnpm` 执行命令，并且确保 `node` 版本 >=v7.6.0
 
 如果使用 `npm` 安装 puppeteer 可能会出现下面的错误：
 > (node:35089) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): AssertionError [ERR_ASSERTION]: Chromium revision is not downloaded. Run "npm install" or "yarn install"
