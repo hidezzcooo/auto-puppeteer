@@ -17,8 +17,6 @@ try {
     let failed_info = ''
     
     // await page.setRequestInterception(true)
-    // /Applications/Chromium.app/Contents/MacOS/Chromium 
-
     page.on('response', response => {
     	let responseType = response.request().resourceType()
 
@@ -34,14 +32,12 @@ try {
     	failed_info += `-Url   : ${request.url()}\n-ERR   : ${request.failure().errorText}\n\n`
     	fs.writeFile(txtArr[1], failed_info, err => err)
     })
-    // page.setContent('page.content()')
-    console.log('------开始...!')
-    console.log(`------检测 <${target}> ...`)
-    console.log('------等待...!')
+
+    console.log(`... Checking <${target}> ...`)
     await page.goto(target)
     await page.waitFor(5000)
     browser.close()
-    console.log('------完成...!')
+    console.log('... Done ...')
   })()
 } catch (err) {
   console.log(err)
